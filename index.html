@@ -15,15 +15,17 @@
 
 <body>
     <div class="header">
-        <div class="company" style="font-size: 36px; text-transform: uppercase;">
+        <div class="company">
             Orca North
+            <div class="subheading">
+                Software Development
+            </div>
         </div>
         <div class="menu">
             <ul>
-                <!-- <li><a href="#consulting">Consulting</a></li> -->
+                <!-- <li><a href="#services">Services</a></li> -->
                 <!-- <li>About</li> -->
                 <!-- <li>Contact</li> -->
-                <li>Software Development</li>
                 <li><a href="mailto:info@orcanorth.com">info@orcanorth.com</a></li>
             </ul>
         </div>
@@ -34,8 +36,8 @@
     </div>
 
     <!-- <div class="content">
-        <div class="consulting">
-            <a name="consulting"></a>
+        <div class="services">
+            <a name="services"></a>
         </div>
         <div class="about">
         </div>
@@ -51,6 +53,15 @@
                 scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
             }, 500);
             return false;
+        });
+
+        $(window).scroll(function() {
+            var scrollTop = $(window).scrollTop();
+            var height = $(window).height();
+
+            $('.header').css({
+                'opacity': ((height - scrollTop) / height)
+            });
         });
     </script> -->
 </body>

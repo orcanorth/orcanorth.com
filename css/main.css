@@ -7,7 +7,7 @@ div {
     display: block;
 }
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     color: #FFFFFF;
     margin-top: 20px;
@@ -18,7 +18,8 @@ div {
     padding-left: 0;
 }
 .header li {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    font-size: 18px;
 }
 .header a {
     color: inherit;
@@ -41,4 +42,14 @@ div {
 .content {
     height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.company {
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.subheading {
+  font-size: 22.5px;
+  text-transform: none;
 }
