@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Pause length="5"/>
+    <Pause length="10"/>
     <Play>http://www.orcanorth.com/message.mp3</Play>
     <Record transcribe="true" transcribeCallback="http://twimlets.com/voicemail?Email=info@orcanorth.com"/>
 </Response>
